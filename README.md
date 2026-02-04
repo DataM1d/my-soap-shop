@@ -1,16 +1,29 @@
-# React + Vite
+A high performance, real time e-commerce foundation built with a focus on type safety, scalable state management, and artisanal aesthetics. This project represents a complete refactor from a legacy Firebase implementation to a modern Supabase + PostgreSQL architecture.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The goal is to create a seamless, multi language shopping experience for handcrafted soaps. Unlike the previous iteration, this version prioritizes data integrity and developer velocity by using a relational database and a declarative data fetching layer.
 
-Currently, two official plugins are available:
+Core Framework: React 19 + Vite
+Database & Auth: Supabase (PostgreSQL)
+Data Fetching:TanStack Query (v5)
+Styling: Tailwind CSS v4
+State Management: Zustand
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+/@/lib: Core service configurations (Supabase, i18n).
 
-## React Compiler
+/@/hooks: Reusable "Headless" logic (e.g., useProducts, useCart).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+/@/components: Atomic UI elements (Buttons, Inputs) vs. Layout wrappers.
 
-## Expanding the ESLint configuration
+/@/pages: Routed views that orchestrate hooks and components.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Planned Logic Phases
+[x] Phase 1: Foundation (Vite, Tailwind v4, Path Aliasing).
+
+[ ] Phase 2: Data Architecture (Supabase Table definitions & TanStack integration).
+
+[ ] Phase 3: Global Context (Zustand store for Cart & Auth).
+
+[ ] Phase 4: Internationalization (i18next for Swedish/English support).
+
+[ ] Phase 5: Deployment (Vercel/Netlify optimized build).

@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  /* Use --color- prefix for v4 custom colors */
+  --color-soap-green-50: #f0fdf4;
+  --color-soap-green-600: #16a34a;
+  --color-soap-green-700: #15803d;
+  --color-soap-green-800: #166534;
+
+  /* This maps the 'font-serif' class to a nice serif stack */
+  --font-serif: "Times New Roman", serif;
+}

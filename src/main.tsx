@@ -6,6 +6,7 @@ import { Toaster } from 'sonner'
 import App from './App'
 import './index.css'
 
+// Initialize the TanStack Query Client
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -15,7 +16,10 @@ const queryClient = new QueryClient({
   },
 })
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+// We use '!' because we know 'root' exists in index.html
+const rootElement = document.getElementById('root')!
+
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
